@@ -314,6 +314,11 @@ export function BookingApp() {
 
   return (
     <div className="app-shell">
+      <header className="mobile-header">
+        <button className="mobile-header__brand" onClick={() => navTo("home")} aria-label="Retour à l’accueil SALIB">
+          SALIB
+        </button>
+      </header>
       <aside className="desktop-sidebar">
         <button className="brand-lockup" onClick={() => navTo("home")}><Grid2X2 size={22} /> SALIB</button>
         <p className="sidebar-label">ESPACE PERSONNEL</p>
